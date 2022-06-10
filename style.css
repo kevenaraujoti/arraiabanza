@@ -11,6 +11,10 @@ body{
     background-color: orange;
 }
 
+.textm{
+    display: none;
+}
+
 .logo{
     display: none;
 }
@@ -19,12 +23,14 @@ body{
     font-size: 2rem;
     padding: 0 15px;
     color: white;
+    cursor: pointer;
 }
 
 .fa-solid{
     font-size: 2rem;
     padding: 0 15px;
     color: white;
+    cursor: pointer;
 }
 
 .flex-container{
@@ -33,7 +39,6 @@ body{
     margin: auto;
     width: 100%;
     min-width: 320px;
-
 }
 
 header{
@@ -50,6 +55,7 @@ header .list-items{
     max-width: 260px;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .list-items li a{
@@ -256,52 +262,61 @@ strong{
 
 @media(max-width:1211px){
 
-    header {
+    .banner {
+        display: none;
+    } 
+    
+    header .list-items{
         display: none;
     }
 
-    .logo{
+    .textm{
         display: block;
-        text-align: center;
+        color: orange;
+        font-size: 1.0rem;
+        margin-left: 150px;
+        margin-bottom: 40px;
     }
 
-    .logo img{
-        width: 100%;
+    .flex-container{
+        margin-top: 60px;
     }
+
 
     @media(max-width: 1001px){
         .banner3{
             width: 100%;
-            height: 400px;
+            height: 700px;
            }
     }
 
     @media(max-width: 810px){
+        
+        .banner3{
+            width: 100%;
+            height: 500px;
+           }
+        
         .section3{
             width: 100%;
-            height: 1000px;
+            height: 700px;
             background-color: #302e2e;
         } 
 
         .sobre h1{
-            text-align: center;
+            margin-top: 50px;
         }
 
         .sobre p{
-            font-size: 1.0rem;
-            text-align: center;
+            font-size: 1.1rem;
         }
 
         .mapa h1{
-            text-align: center;
-            margin-top: 10px;
+            display: none;
         }
 
         .mapa1{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 400px;
+            display: none;
         }
 
         .logo img{
@@ -331,5 +346,4 @@ strong{
     }
     
 }
-
 
